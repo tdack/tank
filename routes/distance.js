@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
         var vol = (2.2 - dist) * (1.65 * 1.65) * Math.PI * 1000
         res.send({
             title: 'Distance',
-            distance: dist,
+            distance: dist.toFixed(2),
             volume: vol.toFixed(3)
 	})
     });
