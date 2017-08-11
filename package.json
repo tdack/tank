@@ -12,6 +12,7 @@
     "express": "~4.15.2",
     "hbs": "~4.0.1",
     "morgan": "~1.8.1",
+    "mqtt": "^2.11.0",
     "raspi-sonar": "^1.1.1",
     "serve-favicon": "~2.4.2"
   }
