@@ -10,6 +10,8 @@ var http = require('http');
 const threads = require('threads')
 const mqtt = threads.spawn('lib/mqtt.js')
 
+mqtt.send('go') /* start the thread running */
+
 /**
  * Get port from environment and store in Express.
  */
