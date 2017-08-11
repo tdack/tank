@@ -7,7 +7,10 @@
 var app = require('../app');
 var debug = require('debug')('tank:server');
 var http = require('http');
-var mqtt = require('../lib/mqtt')
+const threads = require('threads')
+const mqtt = threads.spawn('../lib/mqtt.js')
+
+mqtt.run()
 
 /**
  * Get port from environment and store in Express.
