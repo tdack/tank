@@ -8,7 +8,7 @@ var app = require('../app');
 var debug = require('debug')('tank:server');
 var http = require('http');
 const { fork } = require('child_process');
-const forked = fork('./mqtt.js');
+const forked = fork('bin/mqtt.js');
 
 /**
  * Get port from environment and store in Express.
