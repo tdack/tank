@@ -15,6 +15,7 @@
     "mqtt": "^2.11.0",
     "raspi-sonar": "^1.1.1",
     "serve-favicon": "~2.4.2",
-    "threads": "^0.8.1"
+    "threads": "^0.8.1",
+    "webworker-threads": "^0.7.12"
   }
 }
