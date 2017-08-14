@@ -7,10 +7,10 @@
 var app = require('../app');
 var debug = require('debug')('tank:server');
 var http = require('http');
-const thread = require('webworker-threads').create()
-threads.load(__dirname + 'lib/mqtt.js')
+const threads = require('threads')
+const mqtt = threads.spawn('lib/mqtt.js')
 
-thread.emit('go') /* start the thread running */
+mqtt.send('go') /* start the thread running */
 
 /**
  * Get port from environment and store in Express.
